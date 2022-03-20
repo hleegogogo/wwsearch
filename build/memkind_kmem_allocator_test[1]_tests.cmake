@@ -1,0 +1,1 @@
+set( memkind_kmem_allocator_test_TESTS)

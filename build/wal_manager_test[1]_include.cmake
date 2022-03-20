@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/wal_manager_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/wal_manager_test[1]_tests.cmake")
+else()
+  add_test(wal_manager_test_NOT_BUILT wal_manager_test_NOT_BUILT)
+endif()

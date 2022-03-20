@@ -1,0 +1,5 @@
+add_test( BlobCountingIteratorTest.CountBlobs D:/devroot/rocksdb/build/Debug/blob_counting_iterator_test.exe [==[--gtest_filter=BlobCountingIteratorTest.CountBlobs]==] --gtest_also_run_disabled_tests)
+set_tests_properties( BlobCountingIteratorTest.CountBlobs PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( BlobCountingIteratorTest.CorruptBlobIndex D:/devroot/rocksdb/build/Debug/blob_counting_iterator_test.exe [==[--gtest_filter=BlobCountingIteratorTest.CorruptBlobIndex]==] --gtest_also_run_disabled_tests)
+set_tests_properties( BlobCountingIteratorTest.CorruptBlobIndex PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( blob_counting_iterator_test_TESTS BlobCountingIteratorTest.CountBlobs BlobCountingIteratorTest.CorruptBlobIndex)

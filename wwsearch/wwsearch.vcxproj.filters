@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{16c4bd6c-0f21-4313-9a9f-018aefe478d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{15faa16a-5834-46f4-878d-d56393a5f844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{551747b7-f427-49e4-be96-a9c56f73c056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\tokenizer">
+      <UniqueIdentifier>{8903f0be-ebe6-4645-b1f8-f4031f818813}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\and_query.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\and_scorer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\and_weight.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bool_query.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bool_scorer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bool_weight.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\checked.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codec_doclist.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codec_doclist_impl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codec_impl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\coding.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\collector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\collector_top.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\doc_iterator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\doclist_compression.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\document.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\document_writer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\func_scope_guard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\header.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\index_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\index_field.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\index_reader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\index_wrapper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\index_writer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\iterator_rocks.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\iterator_wrapper_rocks.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lockfree_queue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\logger.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\merge_iterator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\merger_iterator_rocks.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\or_iterator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\or_query.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\or_scorer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\or_weight.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\post_scorer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prefix_query.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prefix_scorer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\prefix_weight.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\query.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scorer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\search_context.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\search_iterator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\search_slice.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\search_status.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\search_store.pb.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\search_util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\searcher.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serialize.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sorter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stat_collector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\staticstic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\storage_type.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tokenizer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tokenizer_impl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tokenizer_mmseg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tracer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\unchecked.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utf8_suffixbuilder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\virtual_db.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\virtual_db_mock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\virtual_db_rocks.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\virtual_db_rocks_compaction_filter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\virtual_db_rocks_write_queue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\weight.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\write_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\write_buffer_mock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\write_buffer_rocks.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wwsearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\search_store.pb.cc">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="src\and_query.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\and_scorer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\and_weight.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bool_query.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bool_scorer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bool_weight.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codec.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codec_doclist_impl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codec_impl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\coding.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collector.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collector_top.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\doc_iterator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\doclist_compression.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\document.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\document_writer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index_config.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index_field.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index_reader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index_wrapper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\index_writer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\logger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\merge_iterator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\merger_iterator_rocks.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\or_iterator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\or_query.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\or_scorer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\or_weight.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\post_scorer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prefix_query.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prefix_scorer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prefix_weight.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\query.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scorer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\search_slice.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\search_status.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\search_util.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\searcher.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tokenizer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tokenizer_impl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tokenizer_mmseg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utf8_suffixbuilder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\virtual_db.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\virtual_db_mock.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\virtual_db_rocks.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\virtual_db_rocks_compaction_filter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\virtual_db_rocks_write_queue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\write_buffer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\write_buffer_mock.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\write_buffer_rocks.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stat_collector.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\staticstic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\assert.c">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\bsd_getopt_win.c">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\csr_mmap.c">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\csr_utils.c">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\dictionary.c">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\iniparser.c">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\mmseg_wrapper.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\mmthunk.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\segmenter.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\SegmenterManager.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\SegmentPkg.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\StringTokenizer.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\SynonymsDict.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\ThesaurusDict.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\UnigramCorpusReader.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\UnigramDict.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\UnigramRecord.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="deps\tokenizer\src\Utf8_16.cpp">
+      <Filter>deps\tokenizer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\search_store.proto">
+      <Filter>include</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+add_test( CleanableTest.Register D:/devroot/rocksdb/build/Debug/cleanable_test.exe [==[--gtest_filter=CleanableTest.Register]==] --gtest_also_run_disabled_tests)
+set_tests_properties( CleanableTest.Register PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( CleanableTest.Delegation D:/devroot/rocksdb/build/Debug/cleanable_test.exe [==[--gtest_filter=CleanableTest.Delegation]==] --gtest_also_run_disabled_tests)
+set_tests_properties( CleanableTest.Delegation PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( CleanableTest.PinnableSlice D:/devroot/rocksdb/build/Debug/cleanable_test.exe [==[--gtest_filter=CleanableTest.PinnableSlice]==] --gtest_also_run_disabled_tests)
+set_tests_properties( CleanableTest.PinnableSlice PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( cleanable_test_TESTS CleanableTest.Register CleanableTest.Delegation CleanableTest.PinnableSlice)

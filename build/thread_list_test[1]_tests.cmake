@@ -1,0 +1,7 @@
+add_test( ThreadListTest.GlobalTables D:/devroot/rocksdb/build/Debug/thread_list_test.exe [==[--gtest_filter=ThreadListTest.GlobalTables]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ThreadListTest.GlobalTables PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( ThreadListTest.SimpleColumnFamilyInfoTest D:/devroot/rocksdb/build/Debug/thread_list_test.exe [==[--gtest_filter=ThreadListTest.SimpleColumnFamilyInfoTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ThreadListTest.SimpleColumnFamilyInfoTest PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( ThreadListTest.SimpleEventTest D:/devroot/rocksdb/build/Debug/thread_list_test.exe [==[--gtest_filter=ThreadListTest.SimpleEventTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ThreadListTest.SimpleEventTest PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( thread_list_test_TESTS ThreadListTest.GlobalTables ThreadListTest.SimpleColumnFamilyInfoTest ThreadListTest.SimpleEventTest)

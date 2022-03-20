@@ -1,0 +1,7 @@
+add_test( ReduceLevelTest.Last_Level D:/devroot/rocksdb/build/Debug/reduce_levels_test.exe [==[--gtest_filter=ReduceLevelTest.Last_Level]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ReduceLevelTest.Last_Level PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( ReduceLevelTest.Top_Level D:/devroot/rocksdb/build/Debug/reduce_levels_test.exe [==[--gtest_filter=ReduceLevelTest.Top_Level]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ReduceLevelTest.Top_Level PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( ReduceLevelTest.All_Levels D:/devroot/rocksdb/build/Debug/reduce_levels_test.exe [==[--gtest_filter=ReduceLevelTest.All_Levels]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ReduceLevelTest.All_Levels PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( reduce_levels_test_TESTS ReduceLevelTest.Last_Level ReduceLevelTest.Top_Level ReduceLevelTest.All_Levels)

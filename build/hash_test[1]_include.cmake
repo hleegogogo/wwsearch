@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/hash_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/hash_test[1]_tests.cmake")
+else()
+  add_test(hash_test_NOT_BUILT hash_test_NOT_BUILT)
+endif()

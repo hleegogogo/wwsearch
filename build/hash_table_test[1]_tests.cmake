@@ -1,0 +1,7 @@
+add_test( HashTableTest.TestInsert D:/devroot/rocksdb/build/Debug/hash_table_test.exe [==[--gtest_filter=HashTableTest.TestInsert]==] --gtest_also_run_disabled_tests)
+set_tests_properties( HashTableTest.TestInsert PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( HashTableTest.TestErase D:/devroot/rocksdb/build/Debug/hash_table_test.exe [==[--gtest_filter=HashTableTest.TestErase]==] --gtest_also_run_disabled_tests)
+set_tests_properties( HashTableTest.TestErase PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( EvictableHashTableTest.TestEvict D:/devroot/rocksdb/build/Debug/hash_table_test.exe [==[--gtest_filter=EvictableHashTableTest.TestEvict]==] --gtest_also_run_disabled_tests)
+set_tests_properties( EvictableHashTableTest.TestEvict PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( hash_table_test_TESTS HashTableTest.TestInsert HashTableTest.TestErase EvictableHashTableTest.TestEvict)

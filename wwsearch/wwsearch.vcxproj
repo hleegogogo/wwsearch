@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4473818d-df3b-4d35-bdd5-e521a7b12617}</ProjectGuid>
+    <RootNamespace>wwsearch</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OS_WIN;WIN32;NOMINMAX;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb\include;D:\devroot\rocksdb\wwsearch\include;D:\devroot\rocksdb\wwsearch\deps\protobuf\src;D:\devroot\rocksdb\wwsearch\deps\tokenizer\include;D:\devroot\rocksdb\;D:\devroot\rocksdb\db\db_impl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OS_WIN;WIN32;NOMINMAX;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb\include;D:\devroot\rocksdb\wwsearch\include;D:\devroot\rocksdb\wwsearch\deps\protobuf\include;D:\devroot\rocksdb\include;D:\devroot\rocksdb\wwsearch\deps\tokenizer\include;D:\devroot\rocksdb\;D:\devroot\rocksdb\db\db_impl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\and_query.h" />
+    <ClInclude Include="include\and_scorer.h" />
+    <ClInclude Include="include\and_weight.h" />
+    <ClInclude Include="include\bool_query.h" />
+    <ClInclude Include="include\bool_scorer.h" />
+    <ClInclude Include="include\bool_weight.h" />
+    <ClInclude Include="include\checked.h" />
+    <ClInclude Include="include\codec.h" />
+    <ClInclude Include="include\codec_doclist.h" />
+    <ClInclude Include="include\codec_doclist_impl.h" />
+    <ClInclude Include="include\codec_impl.h" />
+    <ClInclude Include="include\coding.h" />
+    <ClInclude Include="include\collector.h" />
+    <ClInclude Include="include\collector_top.h" />
+    <ClInclude Include="include\core.h" />
+    <ClInclude Include="include\doclist_compression.h" />
+    <ClInclude Include="include\document.h" />
+    <ClInclude Include="include\document_writer.h" />
+    <ClInclude Include="include\doc_iterator.h" />
+    <ClInclude Include="include\filter.h" />
+    <ClInclude Include="include\func_scope_guard.h" />
+    <ClInclude Include="include\header.h" />
+    <ClInclude Include="include\index_config.h" />
+    <ClInclude Include="include\index_field.h" />
+    <ClInclude Include="include\index_reader.h" />
+    <ClInclude Include="include\index_wrapper.h" />
+    <ClInclude Include="include\index_writer.h" />
+    <ClInclude Include="include\iterator_rocks.h" />
+    <ClInclude Include="include\iterator_wrapper_rocks.h" />
+    <ClInclude Include="include\lockfree_queue.h" />
+    <ClInclude Include="include\logger.h" />
+    <ClInclude Include="include\merger_iterator_rocks.h" />
+    <ClInclude Include="include\merge_iterator.h" />
+    <ClInclude Include="include\or_iterator.h" />
+    <ClInclude Include="include\or_query.h" />
+    <ClInclude Include="include\or_scorer.h" />
+    <ClInclude Include="include\or_weight.h" />
+    <ClInclude Include="include\post_scorer.h" />
+    <ClInclude Include="include\prefix_query.h" />
+    <ClInclude Include="include\prefix_scorer.h" />
+    <ClInclude Include="include\prefix_weight.h" />
+    <ClInclude Include="include\query.h" />
+    <ClInclude Include="include\scorer.h" />
+    <ClInclude Include="include\searcher.h" />
+    <ClInclude Include="include\search_context.h" />
+    <ClInclude Include="include\search_iterator.h" />
+    <ClInclude Include="include\search_slice.h" />
+    <ClInclude Include="include\search_status.h" />
+    <ClInclude Include="include\search_store.pb.h" />
+    <ClInclude Include="include\search_util.h" />
+    <ClInclude Include="include\serialize.h" />
+    <ClInclude Include="include\sorter.h" />
+    <ClInclude Include="include\staticstic.h" />
+    <ClInclude Include="include\stat_collector.h" />
+    <ClInclude Include="include\storage_type.h" />
+    <ClInclude Include="include\tokenizer.h" />
+    <ClInclude Include="include\tokenizer_impl.h" />
+    <ClInclude Include="include\tokenizer_mmseg.h" />
+    <ClInclude Include="include\tracer.h" />
+    <ClInclude Include="include\unchecked.h" />
+    <ClInclude Include="include\utf8_suffixbuilder.h" />
+    <ClInclude Include="include\utils.h" />
+    <ClInclude Include="include\virtual_db.h" />
+    <ClInclude Include="include\virtual_db_mock.h" />
+    <ClInclude Include="include\virtual_db_rocks.h" />
+    <ClInclude Include="include\virtual_db_rocks_compaction_filter.h" />
+    <ClInclude Include="include\virtual_db_rocks_write_queue.h" />
+    <ClInclude Include="include\weight.h" />
+    <ClInclude Include="include\write_buffer.h" />
+    <ClInclude Include="include\write_buffer_mock.h" />
+    <ClInclude Include="include\write_buffer_rocks.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="deps\tokenizer\src\assert.c" />
+    <ClCompile Include="deps\tokenizer\src\bsd_getopt_win.c" />
+    <ClCompile Include="deps\tokenizer\src\csr_mmap.c" />
+    <ClCompile Include="deps\tokenizer\src\csr_utils.c" />
+    <ClCompile Include="deps\tokenizer\src\dictionary.c" />
+    <ClCompile Include="deps\tokenizer\src\iniparser.c" />
+    <ClCompile Include="deps\tokenizer\src\mmseg_wrapper.cpp" />
+    <ClCompile Include="deps\tokenizer\src\mmthunk.cpp" />
+    <ClCompile Include="deps\tokenizer\src\segmenter.cpp" />
+    <ClCompile Include="deps\tokenizer\src\SegmenterManager.cpp" />
+    <ClCompile Include="deps\tokenizer\src\SegmentPkg.cpp" />
+    <ClCompile Include="deps\tokenizer\src\StringTokenizer.cpp" />
+    <ClCompile Include="deps\tokenizer\src\SynonymsDict.cpp" />
+    <ClCompile Include="deps\tokenizer\src\ThesaurusDict.cpp" />
+    <ClCompile Include="deps\tokenizer\src\UnigramCorpusReader.cpp" />
+    <ClCompile Include="deps\tokenizer\src\UnigramDict.cpp" />
+    <ClCompile Include="deps\tokenizer\src\UnigramRecord.cpp" />
+    <ClCompile Include="deps\tokenizer\src\Utf8_16.cpp" />
+    <ClCompile Include="include\search_store.pb.cc" />
+    <ClCompile Include="src\and_query.cpp" />
+    <ClCompile Include="src\and_scorer.cpp" />
+    <ClCompile Include="src\and_weight.cpp" />
+    <ClCompile Include="src\bool_query.cpp" />
+    <ClCompile Include="src\bool_scorer.cpp" />
+    <ClCompile Include="src\bool_weight.cpp" />
+    <ClCompile Include="src\codec.cpp" />
+    <ClCompile Include="src\codec_doclist_impl.cpp" />
+    <ClCompile Include="src\codec_impl.cpp" />
+    <ClCompile Include="src\coding.cpp" />
+    <ClCompile Include="src\collector.cpp" />
+    <ClCompile Include="src\collector_top.cpp" />
+    <ClCompile Include="src\doclist_compression.cpp" />
+    <ClCompile Include="src\document.cpp" />
+    <ClCompile Include="src\document_writer.cpp" />
+    <ClCompile Include="src\doc_iterator.cpp" />
+    <ClCompile Include="src\index_config.cpp" />
+    <ClCompile Include="src\index_field.cpp" />
+    <ClCompile Include="src\index_reader.cpp" />
+    <ClCompile Include="src\index_wrapper.cpp" />
+    <ClCompile Include="src\index_writer.cpp" />
+    <ClCompile Include="src\logger.cpp" />
+    <ClCompile Include="src\merger_iterator_rocks.cpp" />
+    <ClCompile Include="src\merge_iterator.cpp" />
+    <ClCompile Include="src\or_iterator.cpp" />
+    <ClCompile Include="src\or_query.cpp" />
+    <ClCompile Include="src\or_scorer.cpp" />
+    <ClCompile Include="src\or_weight.cpp" />
+    <ClCompile Include="src\post_scorer.cpp" />
+    <ClCompile Include="src\prefix_query.cpp" />
+    <ClCompile Include="src\prefix_scorer.cpp" />
+    <ClCompile Include="src\prefix_weight.cpp" />
+    <ClCompile Include="src\query.cpp" />
+    <ClCompile Include="src\scorer.cpp" />
+    <ClCompile Include="src\searcher.cpp" />
+    <ClCompile Include="src\search_slice.cpp" />
+    <ClCompile Include="src\search_status.cpp" />
+    <ClCompile Include="src\search_util.cpp" />
+    <ClCompile Include="src\staticstic.cpp" />
+    <ClCompile Include="src\stat_collector.cpp" />
+    <ClCompile Include="src\tokenizer.cpp" />
+    <ClCompile Include="src\tokenizer_impl.cpp" />
+    <ClCompile Include="src\tokenizer_mmseg.cpp" />
+    <ClCompile Include="src\utf8_suffixbuilder.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+    <ClCompile Include="src\virtual_db.cpp" />
+    <ClCompile Include="src\virtual_db_mock.cpp" />
+    <ClCompile Include="src\virtual_db_rocks.cpp" />
+    <ClCompile Include="src\virtual_db_rocks_compaction_filter.cpp" />
+    <ClCompile Include="src\virtual_db_rocks_write_queue.cpp" />
+    <ClCompile Include="src\weight.cpp" />
+    <ClCompile Include="src\write_buffer.cpp" />
+    <ClCompile Include="src\write_buffer_mock.cpp" />
+    <ClCompile Include="src\write_buffer_rocks.cpp" />
+    <ClCompile Include="wwsearch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\search_store.proto" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,7 @@
+add_test( ObsoleteFilesTest.RaceForObsoleteFileDeletion D:/devroot/rocksdb/build/Debug/obsolete_files_test.exe [==[--gtest_filter=ObsoleteFilesTest.RaceForObsoleteFileDeletion]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ObsoleteFilesTest.RaceForObsoleteFileDeletion PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( ObsoleteFilesTest.DeleteObsoleteOptionsFile D:/devroot/rocksdb/build/Debug/obsolete_files_test.exe [==[--gtest_filter=ObsoleteFilesTest.DeleteObsoleteOptionsFile]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ObsoleteFilesTest.DeleteObsoleteOptionsFile PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( ObsoleteFilesTest.BlobFiles D:/devroot/rocksdb/build/Debug/obsolete_files_test.exe [==[--gtest_filter=ObsoleteFilesTest.BlobFiles]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ObsoleteFilesTest.BlobFiles PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( obsolete_files_test_TESTS ObsoleteFilesTest.RaceForObsoleteFileDeletion ObsoleteFilesTest.DeleteObsoleteOptionsFile ObsoleteFilesTest.BlobFiles)

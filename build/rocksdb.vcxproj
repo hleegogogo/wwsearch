@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C9B6C6BB-BF66-3D3F-9056-ADF04C89C42C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>rocksdb</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\devroot\rocksdb\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rocksdb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rocksdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\devroot\rocksdb\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rocksdb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rocksdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\devroot\rocksdb\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">rocksdb.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">rocksdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\devroot\rocksdb\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">rocksdb.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">rocksdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(Configuration)/rocksdb.pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ROCKSDB_USE_RTTI;HAVE_SSE42;HAVE_PCLMUL;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ROCKSDB_USE_RTTI;HAVE_SSE42;HAVE_PCLMUL;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+ /Oxt</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(Configuration)/rocksdb.pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_SSE42;HAVE_PCLMUL;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_SSE42;HAVE_PCLMUL;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(Configuration)/rocksdb.pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_SSE42;HAVE_PCLMUL;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_SSE42;HAVE_PCLMUL;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4800;4996;4351;4100;4204;4324</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ErrorReporting>Queue</ErrorReporting>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(Configuration)/rocksdb.pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_SSE42;HAVE_PCLMUL;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_SSE42;HAVE_PCLMUL;ROCKSDB_SUPPORT_THREAD_LOCAL;ROCKSDB_NO_DYNAMIC_EXTENSION;OS_WIN;_MBCS;WIN64;NOMINMAX;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\devroot\rocksdb\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/devroot/rocksdb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/devroot/rocksdb -BD:/devroot/rocksdb/build --check-stamp-file D:/devroot/rocksdb/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GoogleTest.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeASMCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\devroot\rocksdb\cmake\modules\ReadVersion.cmake;D:\devroot\rocksdb\thirdparty.inc;D:\devroot\rocksdb\util\build_version.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\devroot\rocksdb\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/devroot/rocksdb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/devroot/rocksdb -BD:/devroot/rocksdb/build --check-stamp-file D:/devroot/rocksdb/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GoogleTest.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeASMCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\devroot\rocksdb\cmake\modules\ReadVersion.cmake;D:\devroot\rocksdb\thirdparty.inc;D:\devroot\rocksdb\util\build_version.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\devroot\rocksdb\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/devroot/rocksdb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/devroot/rocksdb -BD:/devroot/rocksdb/build --check-stamp-file D:/devroot/rocksdb/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GoogleTest.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeASMCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\devroot\rocksdb\cmake\modules\ReadVersion.cmake;D:\devroot\rocksdb\thirdparty.inc;D:\devroot\rocksdb\util\build_version.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\devroot\rocksdb\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/devroot/rocksdb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/devroot/rocksdb -BD:/devroot/rocksdb/build --check-stamp-file D:/devroot/rocksdb/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GoogleTest.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeASMCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\devroot\rocksdb\cmake\modules\ReadVersion.cmake;D:\devroot\rocksdb\thirdparty.inc;D:\devroot\rocksdb\util\build_version.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\devroot\rocksdb\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\devroot\rocksdb\cache\cache.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\cache\cache_entry_roles.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\cache\clock_cache.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\cache\lru_cache.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\cache\sharded_cache.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\arena_wrapped_db_iter.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_fetcher.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_file_addition.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_file_builder.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_file_cache.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_file_garbage.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_file_meta.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_file_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_garbage_meter.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_log_format.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_log_sequential_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\blob\blob_log_writer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\builder.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\c.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\column_family.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\compaction\compaction.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\compaction\compaction_iterator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\compaction\compaction_picker.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\compaction\compaction_job.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\compaction\compaction_picker_fifo.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\compaction\compaction_picker_level.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\compaction\compaction_picker_universal.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\compaction\sst_partitioner.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\convenience.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_filesnapshot.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\compacted_db_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl_write.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl_compaction_flush.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl_files.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl_open.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl_debug.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl_experimental.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl_readonly.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_impl\db_impl_secondary.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_info_dumper.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\db_iter.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\dbformat.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\error_handler.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\event_helpers.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\experimental.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\external_sst_file_ingestion_job.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\file_indexer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\flush_job.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\flush_scheduler.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\forward_iterator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\import_column_family_job.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\internal_stats.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\logs_with_prep_tracker.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\log_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\log_writer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\malloc_stats.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\memtable.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\memtable_list.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\merge_helper.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\merge_operator.cc">
+      <ObjectFileName>$(IntDir)/db/merge_operator.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\devroot\rocksdb\db\output_validator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\periodic_work_scheduler.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\range_del_aggregator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\range_tombstone_fragmenter.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\repair.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\snapshot_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\table_cache.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\table_properties_collector.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\transaction_log_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\trim_history_scheduler.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\version_builder.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\version_edit.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\version_edit_handler.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\version_set.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\wal_edit.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\wal_manager.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\write_batch.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\write_batch_base.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\write_controller.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\db\write_thread.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\composite_env.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\env.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\env_chroot.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\env_encryption.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\env_hdfs.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\file_system.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\file_system_tracer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\fs_remap.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\env\mock_env.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\delete_scheduler.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\file_prefetch_buffer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\file_util.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\filename.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\line_file_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\random_access_file_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\read_write_util.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\readahead_raf.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\sequence_file_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\sst_file_manager_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\file\writable_file_writer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\logging\auto_roll_logger.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\logging\event_logger.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\logging\log_buffer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memory\arena.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memory\concurrent_arena.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memory\jemalloc_nodump_allocator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memory\memkind_kmem_allocator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memtable\alloc_tracker.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memtable\hash_linklist_rep.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memtable\hash_skiplist_rep.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memtable\skiplistrep.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memtable\vectorrep.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\memtable\write_buffer_manager.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\histogram.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\histogram_windowing.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\in_memory_stats_history.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\instrumented_mutex.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\iostats_context.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\perf_context.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\perf_level.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\persistent_stats_history.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\statistics.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\thread_status_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\thread_status_updater.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\thread_status_util.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\monitoring\thread_status_util_debug.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\options\cf_options.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\options\configurable.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\options\customizable.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\options\db_options.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\options\options.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\options\options_helper.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\options\options_parser.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\port\stack_trace.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\adaptive\adaptive_table_factory.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\binary_search_index_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block_based_filter_block.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block_based_table_builder.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block_based_table_factory.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block_based_table_iterator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block_based_table_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block_builder.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block_prefetcher.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\block_prefix_index.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\data_block_hash_index.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\data_block_footer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\filter_block_reader_common.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\filter_policy.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\flush_block_policy.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\full_filter_block.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\hash_index_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\index_builder.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\index_reader_common.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\parsed_full_filter_block.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\partitioned_filter_block.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\partitioned_index_iterator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\partitioned_index_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\reader_common.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_based\uncompression_dict_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\block_fetcher.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\cuckoo\cuckoo_table_builder.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\cuckoo\cuckoo_table_factory.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\cuckoo\cuckoo_table_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\format.cc">
+      <ObjectFileName>$(IntDir)/table/format.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\devroot\rocksdb\table\get_context.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\iterator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\merging_iterator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\meta_blocks.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\persistent_cache_helper.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\plain\plain_table_bloom.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\plain\plain_table_builder.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\plain\plain_table_factory.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\plain\plain_table_index.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\plain\plain_table_key_coding.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\plain\plain_table_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\sst_file_dumper.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\sst_file_reader.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\sst_file_writer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\table_factory.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\table_properties.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\table\two_level_iterator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\test_util\sync_point.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\test_util\sync_point_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\test_util\testutil.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\test_util\transaction_test_util.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\tools\block_cache_analyzer\block_cache_trace_analyzer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\tools\dump\db_dump_tool.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\tools\io_tracer_parser_tool.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\tools\ldb_cmd.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\tools\ldb_tool.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\tools\sst_dump_tool.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\tools\trace_analyzer_tool.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\trace_replay\trace_replay.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\trace_replay\block_cache_tracer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\trace_replay\io_tracer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\coding.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\compaction_job_stats_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\comparator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\compression_context_cache.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\concurrent_task_limiter_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\crc32c.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\dynamic_bloom.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\hash.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\murmurhash.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\random.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\rate_limiter.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\ribbon_config.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\slice.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\file_checksum_helper.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\status.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\string_util.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\thread_local.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\threadpool_imp.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\util\xxhash.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\backupable\backupable_db.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\blob_db\blob_compaction_filter.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\blob_db\blob_db.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\blob_db\blob_db_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\blob_db\blob_db_impl_filesnapshot.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\blob_db\blob_dump_tool.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\blob_db\blob_file.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\cassandra\cassandra_compaction_filter.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\cassandra\format.cc">
+      <ObjectFileName>$(IntDir)/utilities/cassandra/format.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\devroot\rocksdb\utilities\cassandra\merge_operator.cc">
+      <ObjectFileName>$(IntDir)/utilities/cassandra/merge_operator.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\devroot\rocksdb\utilities\checkpoint\checkpoint_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\compaction_filters\remove_emptyvalue_compactionfilter.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\debug.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\env_mirror.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\env_timed.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\fault_injection_env.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\fault_injection_fs.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\leveldb_options\leveldb_options.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\memory\memory_util.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\merge_operators\bytesxor.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\merge_operators\max.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\merge_operators\put.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\merge_operators\sortlist.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\merge_operators\string_append\stringappend.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\merge_operators\string_append\stringappend2.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\merge_operators\uint64add.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\object_registry.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\option_change_migration\option_change_migration.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\options\options_util.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\persistent_cache\block_cache_tier.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\persistent_cache\block_cache_tier_file.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\persistent_cache\block_cache_tier_metadata.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\persistent_cache\persistent_cache_tier.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\persistent_cache\volatile_tier_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\simulator_cache\cache_simulator.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\simulator_cache\sim_cache.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\table_properties_collectors\compact_on_deletion_collector.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\trace\file_trace_reader_writer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\lock_manager.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\point\point_lock_tracker.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\point\point_lock_manager.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\range_tree_lock_manager.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\range_tree_lock_tracker.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\optimistic_transaction_db_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\optimistic_transaction.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\pessimistic_transaction.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\pessimistic_transaction_db.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\snapshot_checker.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\transaction_base.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\transaction_db_mutex_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\transaction_util.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\write_prepared_txn.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\write_prepared_txn_db.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\write_unprepared_txn.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\write_unprepared_txn_db.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\ttl\db_ttl_impl.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\write_batch_with_index\write_batch_with_index.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\write_batch_with_index\write_batch_with_index_internal.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\concurrent_tree.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\keyrange.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\lock_request.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\locktree.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\manager.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\range_buffer.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\treenode.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\txnid_set.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\locktree\wfg.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\standalone_port.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\util\dbt.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\utilities\transactions\lock\range\range_tree\lib\util\memarena.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\port\win\io_win.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\port\win\env_win.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\port\win\env_default.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\port\win\port_win.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\port\win\win_logger.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\port\win\win_thread.cc" />
+    <ClCompile Include="D:\devroot\rocksdb\third-party\folly\folly\detail\Futex.cpp" />
+    <ClCompile Include="D:\devroot\rocksdb\third-party\folly\folly\synchronization\AtomicNotification.cpp" />
+    <ClCompile Include="D:\devroot\rocksdb\third-party\folly\folly\synchronization\DistributedMutex.cpp" />
+    <ClCompile Include="D:\devroot\rocksdb\third-party\folly\folly\synchronization\ParkingLot.cpp" />
+    <ClCompile Include="D:\devroot\rocksdb\third-party\folly\folly\synchronization\WaitOptions.cpp" />
+    <ClCompile Include="D:\devroot\rocksdb\build\build_version.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\devroot\rocksdb\build\ZERO_CHECK.vcxproj">
+      <Project>{5B8AD3F0-BF9F-378F-A02C-CE7A3E49DBCA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/env_basic_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/env_basic_test[1]_tests.cmake")
+else()
+  add_test(env_basic_test_NOT_BUILT env_basic_test_NOT_BUILT)
+endif()

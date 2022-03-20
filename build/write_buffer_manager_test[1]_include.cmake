@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/write_buffer_manager_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/write_buffer_manager_test[1]_tests.cmake")
+else()
+  add_test(write_buffer_manager_test_NOT_BUILT write_buffer_manager_test_NOT_BUILT)
+endif()

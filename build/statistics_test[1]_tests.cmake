@@ -1,0 +1,5 @@
+add_test( StatisticsTest.SanityTickers D:/devroot/rocksdb/build/Debug/statistics_test.exe [==[--gtest_filter=StatisticsTest.SanityTickers]==] --gtest_also_run_disabled_tests)
+set_tests_properties( StatisticsTest.SanityTickers PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( StatisticsTest.SanityHistograms D:/devroot/rocksdb/build/Debug/statistics_test.exe [==[--gtest_filter=StatisticsTest.SanityHistograms]==] --gtest_also_run_disabled_tests)
+set_tests_properties( StatisticsTest.SanityHistograms PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( statistics_test_TESTS StatisticsTest.SanityTickers StatisticsTest.SanityHistograms)

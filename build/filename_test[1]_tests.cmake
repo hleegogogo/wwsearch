@@ -1,0 +1,7 @@
+add_test( FileNameTest.Parse D:/devroot/rocksdb/build/Debug/filename_test.exe [==[--gtest_filter=FileNameTest.Parse]==] --gtest_also_run_disabled_tests)
+set_tests_properties( FileNameTest.Parse PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( FileNameTest.InfoLogFileName D:/devroot/rocksdb/build/Debug/filename_test.exe [==[--gtest_filter=FileNameTest.InfoLogFileName]==] --gtest_also_run_disabled_tests)
+set_tests_properties( FileNameTest.InfoLogFileName PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( FileNameTest.Construction D:/devroot/rocksdb/build/Debug/filename_test.exe [==[--gtest_filter=FileNameTest.Construction]==] --gtest_also_run_disabled_tests)
+set_tests_properties( FileNameTest.Construction PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( filename_test_TESTS FileNameTest.Parse FileNameTest.InfoLogFileName FileNameTest.Construction)

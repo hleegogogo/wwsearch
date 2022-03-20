@@ -1,0 +1,5 @@
+add_test( DBMergeOperandTest.GetMergeOperandsBasic D:/devroot/rocksdb/build/Debug/db_merge_operand_test.exe [==[--gtest_filter=DBMergeOperandTest.GetMergeOperandsBasic]==] --gtest_also_run_disabled_tests)
+set_tests_properties( DBMergeOperandTest.GetMergeOperandsBasic PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( DBMergeOperandTest.BlobDBGetMergeOperandsBasic D:/devroot/rocksdb/build/Debug/db_merge_operand_test.exe [==[--gtest_filter=DBMergeOperandTest.BlobDBGetMergeOperandsBasic]==] --gtest_also_run_disabled_tests)
+set_tests_properties( DBMergeOperandTest.BlobDBGetMergeOperandsBasic PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( db_merge_operand_test_TESTS DBMergeOperandTest.GetMergeOperandsBasic DBMergeOperandTest.BlobDBGetMergeOperandsBasic)

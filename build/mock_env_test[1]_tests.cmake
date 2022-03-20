@@ -1,0 +1,5 @@
+add_test( MockEnvTest.Corrupt D:/devroot/rocksdb/build/Debug/mock_env_test.exe [==[--gtest_filter=MockEnvTest.Corrupt]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MockEnvTest.Corrupt PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( MockEnvTest.FakeSleeping D:/devroot/rocksdb/build/Debug/mock_env_test.exe [==[--gtest_filter=MockEnvTest.FakeSleeping]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MockEnvTest.FakeSleeping PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( mock_env_test_TESTS MockEnvTest.Corrupt MockEnvTest.FakeSleeping)

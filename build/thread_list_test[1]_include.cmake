@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/thread_list_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/thread_list_test[1]_tests.cmake")
+else()
+  add_test(thread_list_test_NOT_BUILT thread_list_test_NOT_BUILT)
+endif()

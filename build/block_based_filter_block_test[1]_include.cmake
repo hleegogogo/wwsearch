@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/block_based_filter_block_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/block_based_filter_block_test[1]_tests.cmake")
+else()
+  add_test(block_based_filter_block_test_NOT_BUILT block_based_filter_block_test_NOT_BUILT)
+endif()

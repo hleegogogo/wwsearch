@@ -1,0 +1,7 @@
+add_test( MergeTest.MergeDbTest D:/devroot/rocksdb/build/Debug/merge_test.exe [==[--gtest_filter=MergeTest.MergeDbTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MergeTest.MergeDbTest PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( MergeTest.MergeDbTtlTest D:/devroot/rocksdb/build/Debug/merge_test.exe [==[--gtest_filter=MergeTest.MergeDbTtlTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MergeTest.MergeDbTtlTest PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( MergeTest.MergeWithCompactionAndFlush D:/devroot/rocksdb/build/Debug/merge_test.exe [==[--gtest_filter=MergeTest.MergeWithCompactionAndFlush]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MergeTest.MergeWithCompactionAndFlush PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( merge_test_TESTS MergeTest.MergeDbTest MergeTest.MergeDbTtlTest MergeTest.MergeWithCompactionAndFlush)

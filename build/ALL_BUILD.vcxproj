@@ -1,0 +1,989 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCAAB6C4-C9E8-3893-A496-ED5E92A7D035}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\devroot\rocksdb\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/devroot/rocksdb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/devroot/rocksdb -BD:/devroot/rocksdb/build --check-stamp-file D:/devroot/rocksdb/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GoogleTest.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeASMCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\devroot\rocksdb\cmake\modules\ReadVersion.cmake;D:\devroot\rocksdb\thirdparty.inc;D:\devroot\rocksdb\util\build_version.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\devroot\rocksdb\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/devroot/rocksdb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/devroot/rocksdb -BD:/devroot/rocksdb/build --check-stamp-file D:/devroot/rocksdb/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GoogleTest.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeASMCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\devroot\rocksdb\cmake\modules\ReadVersion.cmake;D:\devroot\rocksdb\thirdparty.inc;D:\devroot\rocksdb\util\build_version.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\devroot\rocksdb\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/devroot/rocksdb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/devroot/rocksdb -BD:/devroot/rocksdb/build --check-stamp-file D:/devroot/rocksdb/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GoogleTest.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeASMCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\devroot\rocksdb\cmake\modules\ReadVersion.cmake;D:\devroot\rocksdb\thirdparty.inc;D:\devroot\rocksdb\util\build_version.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\devroot\rocksdb\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/devroot/rocksdb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/devroot/rocksdb -BD:/devroot/rocksdb/build --check-stamp-file D:/devroot/rocksdb/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeASMInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeConfigurableFile.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckCXXSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CheckSymbolExists.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;D:\Program Files\CMake\share\cmake-3.22\Modules\FindGit.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\GoogleTest.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeASMCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeCXXCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeRCCompiler.cmake;D:\devroot\rocksdb\build\CMakeFiles\3.22.1\CMakeSystem.cmake;D:\devroot\rocksdb\cmake\modules\ReadVersion.cmake;D:\devroot\rocksdb\thirdparty.inc;D:\devroot\rocksdb\util\build_version.cc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\devroot\rocksdb\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\devroot\rocksdb\build\ZERO_CHECK.vcxproj">
+      <Project>{5B8AD3F0-BF9F-378F-A02C-CE7A3E49DBCA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\DistributedMutexTest.vcxproj">
+      <Project>{A929D688-7C6A-366B-AB36-0975053C408E}</Project>
+      <Name>DistributedMutexTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\arena_test.vcxproj">
+      <Project>{D74DC481-1DFC-3480-B1F3-A0DE2FC5F500}</Project>
+      <Name>arena_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\auto_roll_logger_test.vcxproj">
+      <Project>{01722A67-FA68-3957-97CB-C2ECB190500D}</Project>
+      <Name>auto_roll_logger_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\autovector_test.vcxproj">
+      <Project>{299349EA-B832-3679-8758-9EC26D0C66D0}</Project>
+      <Name>autovector_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\backupable_db_test.vcxproj">
+      <Project>{EB7F0A84-C7E2-3609-9CB6-90ACC196BFE1}</Project>
+      <Name>backupable_db_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\blob_counting_iterator_test.vcxproj">
+      <Project>{6DEB5ECB-F2BB-3BE0-945B-D16C9635776B}</Project>
+      <Name>blob_counting_iterator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\blob_db_test.vcxproj">
+      <Project>{8306EBD5-3786-343F-A9FA-BAC7FAC86460}</Project>
+      <Name>blob_db_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\blob_file_addition_test.vcxproj">
+      <Project>{E4216468-3A37-38EC-B295-0F0AA80D04D5}</Project>
+      <Name>blob_file_addition_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\blob_file_builder_test.vcxproj">
+      <Project>{F1DEDDB4-587D-32D2-809E-2E811A485193}</Project>
+      <Name>blob_file_builder_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\blob_file_cache_test.vcxproj">
+      <Project>{13BCF463-B8BE-3728-912A-446B8B0659E2}</Project>
+      <Name>blob_file_cache_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\blob_file_garbage_test.vcxproj">
+      <Project>{BA5DBDB5-CC22-38A9-A119-7E8F3015B8AE}</Project>
+      <Name>blob_file_garbage_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\blob_file_reader_test.vcxproj">
+      <Project>{58B43BDF-03D9-3DB7-BEF1-BC4743EB9984}</Project>
+      <Name>blob_file_reader_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\blob_garbage_meter_test.vcxproj">
+      <Project>{C70CE0F5-B28E-325F-BC89-F6009CE444C8}</Project>
+      <Name>blob_garbage_meter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\block_based_filter_block_test.vcxproj">
+      <Project>{B898B7A4-5F47-30CC-B123-8ADC056F1F2B}</Project>
+      <Name>block_based_filter_block_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\block_based_table_reader_test.vcxproj">
+      <Project>{0B522A55-0010-3EF9-9DAB-B38BD1274C1B}</Project>
+      <Name>block_based_table_reader_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\block_cache_trace_analyzer_test.vcxproj">
+      <Project>{DA96B152-03F5-3D79-A95F-196A9645CC8F}</Project>
+      <Name>block_cache_trace_analyzer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\block_cache_tracer_test.vcxproj">
+      <Project>{A11B7A99-D09A-32CA-AA91-5862FD488C7E}</Project>
+      <Name>block_cache_tracer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\block_fetcher_test.vcxproj">
+      <Project>{8502D586-EE1C-3BFD-90C7-DBCC35A4F6F8}</Project>
+      <Name>block_fetcher_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\block_test.vcxproj">
+      <Project>{F8BD3972-B3F9-3C4E-80C8-BAF047E9692B}</Project>
+      <Name>block_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\bloom_test.vcxproj">
+      <Project>{B1968AC3-763C-3BE3-96A8-7172968FAFBD}</Project>
+      <Name>bloom_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\c_test.vcxproj">
+      <Project>{B9101A33-16C9-3600-9748-5D374BC2341D}</Project>
+      <Name>c_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cache_bench.vcxproj">
+      <Project>{81CB81C1-369F-31FC-AE5A-0CCEA33EF391}</Project>
+      <Name>cache_bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cache_simulator_test.vcxproj">
+      <Project>{1731C063-23E5-3078-ADD2-8059E6A6D7F9}</Project>
+      <Name>cache_simulator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cache_test.vcxproj">
+      <Project>{E6BF0DB5-4E93-3D95-8F3B-E53DAA2DF170}</Project>
+      <Name>cache_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cassandra_format_test.vcxproj">
+      <Project>{275F06BD-1C6D-30D4-8D0A-9C349F94FE17}</Project>
+      <Name>cassandra_format_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cassandra_functional_test.vcxproj">
+      <Project>{AA2F49E6-E512-344C-9B11-FE3A860ACD13}</Project>
+      <Name>cassandra_functional_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cassandra_row_merge_test.vcxproj">
+      <Project>{89B1B069-BEDB-3935-A545-31D2628AC8C8}</Project>
+      <Name>cassandra_row_merge_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cassandra_serialize_test.vcxproj">
+      <Project>{F31B1D02-6FA1-35D5-B8CF-E6F7B813F086}</Project>
+      <Name>cassandra_serialize_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\checkpoint_test.vcxproj">
+      <Project>{2C8C89BE-F227-3AAC-979D-9A1C15EEB24D}</Project>
+      <Name>checkpoint_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cleanable_test.vcxproj">
+      <Project>{5B6CD756-72F4-344D-8E16-6924C33CC5F2}</Project>
+      <Name>cleanable_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\clipping_iterator_test.vcxproj">
+      <Project>{5559FBC6-EEF4-3CF5-8472-6061736877B2}</Project>
+      <Name>clipping_iterator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\coding_test.vcxproj">
+      <Project>{4C06EAD8-608C-32A9-AC50-67F3F7166EDB}</Project>
+      <Name>coding_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\column_family_test.vcxproj">
+      <Project>{6495A3BF-0977-3226-84FA-9657E712BC7E}</Project>
+      <Name>column_family_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\compact_files_test.vcxproj">
+      <Project>{0DDFD5A3-8E99-3183-9B2F-E44CEB82A7D6}</Project>
+      <Name>compact_files_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\compact_on_deletion_collector_test.vcxproj">
+      <Project>{0277C4FE-E2AD-3EAE-991A-D3748F33B4DB}</Project>
+      <Name>compact_on_deletion_collector_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\compaction_iterator_test.vcxproj">
+      <Project>{1EDD1BD6-09AE-38EF-ACC8-710F1AF83D04}</Project>
+      <Name>compaction_iterator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\compaction_job_stats_test.vcxproj">
+      <Project>{39F0B31F-13D6-3708-BB57-26BD9370AC2F}</Project>
+      <Name>compaction_job_stats_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\compaction_job_test.vcxproj">
+      <Project>{EA7BBCEE-AAD5-3D3F-B323-ADFA7336B33A}</Project>
+      <Name>compaction_job_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\compaction_picker_test.vcxproj">
+      <Project>{2FA84AE7-25B5-316C-A0DC-933123957043}</Project>
+      <Name>compaction_picker_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\compaction_service_test.vcxproj">
+      <Project>{BB2FE4D4-9D5F-3AC8-8DD8-A29624A11BE6}</Project>
+      <Name>compaction_service_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\comparator_db_test.vcxproj">
+      <Project>{348A3B35-328A-32D4-9A2E-1BD43C82E347}</Project>
+      <Name>comparator_db_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\configurable_test.vcxproj">
+      <Project>{79981C7F-1A8B-311F-B1CE-80D4E60B4433}</Project>
+      <Name>configurable_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\corruption_test.vcxproj">
+      <Project>{202DB3B3-6ACD-34A5-AE1E-44356E95CE1B}</Project>
+      <Name>corruption_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\crc32c_test.vcxproj">
+      <Project>{14E175BC-D8EB-34B5-A2D2-45C8265A2B1C}</Project>
+      <Name>crc32c_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cuckoo_table_builder_test.vcxproj">
+      <Project>{CF5757A3-C696-3387-B084-FD1DE784DE2E}</Project>
+      <Name>cuckoo_table_builder_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cuckoo_table_db_test.vcxproj">
+      <Project>{C72DA523-EBFB-3280-AA19-A0BCF967CA3A}</Project>
+      <Name>cuckoo_table_db_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\cuckoo_table_reader_test.vcxproj">
+      <Project>{C273CD18-FF0C-3E88-BC58-8281D7C9BD07}</Project>
+      <Name>cuckoo_table_reader_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\customizable_test.vcxproj">
+      <Project>{BA75A391-FF66-3A5F-994B-3DC7CDF3052D}</Project>
+      <Name>customizable_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\data_block_hash_index_test.vcxproj">
+      <Project>{0AECA226-A484-3C25-80EB-4A163EDE1ED7}</Project>
+      <Name>data_block_hash_index_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_basic_test.vcxproj">
+      <Project>{E0907D2C-D2D1-320D-A447-1939FD05A5B7}</Project>
+      <Name>db_basic_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_bench.vcxproj">
+      <Project>{0E7E4D53-DA1B-3FC5-A308-4925D9B693F2}</Project>
+      <Name>db_bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_blob_basic_test.vcxproj">
+      <Project>{2A74774C-264C-3E6C-A221-A30ECC3884A5}</Project>
+      <Name>db_blob_basic_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_blob_compaction_test.vcxproj">
+      <Project>{A084CBCF-1315-30B0-82F5-872761195AB6}</Project>
+      <Name>db_blob_compaction_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_blob_corruption_test.vcxproj">
+      <Project>{BEC71210-2742-36EF-AC68-5564F5BA22DC}</Project>
+      <Name>db_blob_corruption_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_blob_index_test.vcxproj">
+      <Project>{18448E97-3336-32A7-ADF5-B9B396F59C1F}</Project>
+      <Name>db_blob_index_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_block_cache_test.vcxproj">
+      <Project>{8A614AA4-355A-3CAE-9BB5-9647996B62A0}</Project>
+      <Name>db_block_cache_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_bloom_filter_test.vcxproj">
+      <Project>{462E4F6D-C546-3707-A37B-87AD4FA5451C}</Project>
+      <Name>db_bloom_filter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_compaction_filter_test.vcxproj">
+      <Project>{C5B41568-ED6E-399A-A7BA-7342AA0DD9B1}</Project>
+      <Name>db_compaction_filter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_compaction_test.vcxproj">
+      <Project>{E665533F-3D6E-3177-8625-233FBEEFB702}</Project>
+      <Name>db_compaction_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_dynamic_level_test.vcxproj">
+      <Project>{BE28B6AB-8885-3D21-9F14-777AF143D652}</Project>
+      <Name>db_dynamic_level_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_flush_test.vcxproj">
+      <Project>{28FF5901-3C19-30B3-B17A-E0AEF8888CF6}</Project>
+      <Name>db_flush_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_inplace_update_test.vcxproj">
+      <Project>{F62648C9-5D84-33FB-99CF-6DD9155EA198}</Project>
+      <Name>db_inplace_update_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_io_failure_test.vcxproj">
+      <Project>{8D20083C-8DDA-364F-BA82-636FE24D9CC7}</Project>
+      <Name>db_io_failure_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_iter_stress_test.vcxproj">
+      <Project>{7E76C8A3-92EE-3FCA-B16D-6E66556CC67A}</Project>
+      <Name>db_iter_stress_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_iter_test.vcxproj">
+      <Project>{D4A963A1-2FA9-394F-A527-690C75CB2A15}</Project>
+      <Name>db_iter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_iterator_test.vcxproj">
+      <Project>{8830A845-A354-33E5-8D27-8B8B78B1CA82}</Project>
+      <Name>db_iterator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_kv_checksum_test.vcxproj">
+      <Project>{90561803-40E1-38C7-95A0-2B617C90D11D}</Project>
+      <Name>db_kv_checksum_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_log_iter_test.vcxproj">
+      <Project>{46FC9BFA-F9CA-34B3-BF83-F17DD8C62E6E}</Project>
+      <Name>db_log_iter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_logical_block_size_cache_test.vcxproj">
+      <Project>{E3E97353-A443-3D1F-B894-BAF00DAD9A92}</Project>
+      <Name>db_logical_block_size_cache_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_memtable_test.vcxproj">
+      <Project>{1CC3833C-EC6E-3F1E-86A4-D4942F6D891D}</Project>
+      <Name>db_memtable_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_merge_operand_test.vcxproj">
+      <Project>{1C8CED93-8393-39A4-9B34-F93E2FA68285}</Project>
+      <Name>db_merge_operand_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_merge_operator_test.vcxproj">
+      <Project>{F891C7AC-878E-3D80-8E29-A1924D38BB1C}</Project>
+      <Name>db_merge_operator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_options_test.vcxproj">
+      <Project>{E9F9B3FE-42C2-3D48-A7AC-14CA4EB9A6A9}</Project>
+      <Name>db_options_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_properties_test.vcxproj">
+      <Project>{9834297E-B377-33F1-AD9A-9145E0C5132E}</Project>
+      <Name>db_properties_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_range_del_test.vcxproj">
+      <Project>{DF28133E-A389-3FC9-9331-07CC5076C34F}</Project>
+      <Name>db_range_del_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\tools\db_repl_stress.vcxproj">
+      <Project>{E456A632-3976-3012-ADA7-76C981BC641E}</Project>
+      <Name>db_repl_stress</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\tools\db_sanity_test.vcxproj">
+      <Project>{9D373954-A609-3835-A67A-CAF7032928E4}</Project>
+      <Name>db_sanity_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_secondary_test.vcxproj">
+      <Project>{9D4EE438-6E06-3150-AC97-81DCF7CD733D}</Project>
+      <Name>db_secondary_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_sst_test.vcxproj">
+      <Project>{5F46A328-159C-35CF-A2F4-3D6912AAFE1B}</Project>
+      <Name>db_sst_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_statistics_test.vcxproj">
+      <Project>{BE1723E3-CCA2-356F-9C48-3B37B3DF00A7}</Project>
+      <Name>db_statistics_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_stress_tool\db_stress.vcxproj">
+      <Project>{D0B682F9-7E9C-31E5-9B9E-EA05976600CB}</Project>
+      <Name>db_stress</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_table_properties_test.vcxproj">
+      <Project>{9B3AC316-C43F-36BC-85E4-DB9E5A2613E0}</Project>
+      <Name>db_table_properties_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_tailing_iter_test.vcxproj">
+      <Project>{40D5195D-28A2-303A-89AF-54CFD90DBD43}</Project>
+      <Name>db_tailing_iter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_test.vcxproj">
+      <Project>{9063CC8D-9ED5-37C6-9A2D-2278857ADF45}</Project>
+      <Name>db_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_test2.vcxproj">
+      <Project>{EF997E0A-2668-39AA-B49B-24C4EBCF6A77}</Project>
+      <Name>db_test2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_universal_compaction_test.vcxproj">
+      <Project>{C15C79BD-FE2F-37DE-8EEA-533AAC849B13}</Project>
+      <Name>db_universal_compaction_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_wal_test.vcxproj">
+      <Project>{F57E7CBD-1473-3234-AD09-D8CDA80D4DDA}</Project>
+      <Name>db_wal_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_with_timestamp_basic_test.vcxproj">
+      <Project>{9DFC44A4-1EB7-3209-9336-B2C7ECEB1159}</Project>
+      <Name>db_with_timestamp_basic_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_with_timestamp_compaction_test.vcxproj">
+      <Project>{309E872A-DEB6-3AF6-ADC4-121BFB3FBDE5}</Project>
+      <Name>db_with_timestamp_compaction_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\db_write_test.vcxproj">
+      <Project>{41D5F719-DB05-385B-AC41-36014243C22B}</Project>
+      <Name>db_write_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\dbformat_test.vcxproj">
+      <Project>{1AB44841-5C2D-39EE-856F-E8104C2A5ACA}</Project>
+      <Name>dbformat_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\defer_test.vcxproj">
+      <Project>{B11F80AA-3136-3313-81F0-FA8F38AE2131}</Project>
+      <Name>defer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\delete_scheduler_test.vcxproj">
+      <Project>{D7A1A568-AC45-3186-AE35-E7DD702774CA}</Project>
+      <Name>delete_scheduler_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\deletefile_test.vcxproj">
+      <Project>{6C0920A0-ADAD-304C-BFE6-E5D1FBD73026}</Project>
+      <Name>deletefile_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\dynamic_bloom_test.vcxproj">
+      <Project>{6A1E8F72-947C-3722-BF19-BABE3E3BC459}</Project>
+      <Name>dynamic_bloom_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\env_basic_test.vcxproj">
+      <Project>{78A98C8B-DB80-3AC7-A0E4-0ABCE828A214}</Project>
+      <Name>env_basic_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\env_logger_test.vcxproj">
+      <Project>{A9DBAE74-BC37-3326-8C34-C07CDDEDADC9}</Project>
+      <Name>env_logger_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\env_test.vcxproj">
+      <Project>{6445B29A-0D55-388D-BA59-99383E408039}</Project>
+      <Name>env_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\error_handler_fs_test.vcxproj">
+      <Project>{EA222477-EEAC-3424-A735-1EFB2C5FAD60}</Project>
+      <Name>error_handler_fs_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\event_logger_test.vcxproj">
+      <Project>{5A64662F-EA7B-388E-81BB-1A50ACAF4561}</Project>
+      <Name>event_logger_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\external_sst_file_basic_test.vcxproj">
+      <Project>{FC6F5C19-17DD-3D86-B97A-13F33D411C9D}</Project>
+      <Name>external_sst_file_basic_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\external_sst_file_test.vcxproj">
+      <Project>{0414C28E-D305-333C-B843-F34CCDAACA43}</Project>
+      <Name>external_sst_file_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\fault_injection_test.vcxproj">
+      <Project>{204D43E5-5B0F-3232-BED0-89B6F4E19184}</Project>
+      <Name>fault_injection_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\file_indexer_test.vcxproj">
+      <Project>{C3B182FA-E135-357B-879C-A6B17008ECE0}</Project>
+      <Name>file_indexer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\file_reader_writer_test.vcxproj">
+      <Project>{AD2C3D32-A667-324D-93CD-36013486FFD1}</Project>
+      <Name>file_reader_writer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\filelock_test.vcxproj">
+      <Project>{47078723-293A-38C1-822E-B250DC3AEE11}</Project>
+      <Name>filelock_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\filename_test.vcxproj">
+      <Project>{467EAC94-5A66-3AAD-B08E-1C9BA3247627}</Project>
+      <Name>filename_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\filter_bench.vcxproj">
+      <Project>{5D6E1005-B809-3998-95A4-E68B1387403D}</Project>
+      <Name>filter_bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\flush_job_test.vcxproj">
+      <Project>{F9C7A512-7016-385D-8640-50964C03B097}</Project>
+      <Name>flush_job_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\full_filter_block_test.vcxproj">
+      <Project>{37701270-9191-385F-8D3C-D1E3D91CC0E9}</Project>
+      <Name>full_filter_block_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\third-party\gtest-1.8.1\fused-src\gtest\gtest.vcxproj">
+      <Project>{17FA143A-15FA-35FE-A60C-710B3A1D662A}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\hash_table_bench.vcxproj">
+      <Project>{F426930B-3DED-383D-B14D-C969688A6ABD}</Project>
+      <Name>hash_table_bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\hash_table_test.vcxproj">
+      <Project>{3A62BA81-9B58-3D8A-B45D-B0F2FD61567A}</Project>
+      <Name>hash_table_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\hash_test.vcxproj">
+      <Project>{9CE42CB5-C662-3A8C-924E-D3ED87BF0B29}</Project>
+      <Name>hash_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\heap_test.vcxproj">
+      <Project>{44CD3484-95F0-3DE6-98A3-978D2EAFA87D}</Project>
+      <Name>heap_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\histogram_test.vcxproj">
+      <Project>{7FE5661F-7117-3445-8958-F3E5A1654F84}</Project>
+      <Name>histogram_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\inlineskiplist_test.vcxproj">
+      <Project>{53C5AA28-B62B-3035-B4F3-D4E867A281F2}</Project>
+      <Name>inlineskiplist_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\io_posix_test.vcxproj">
+      <Project>{F627D178-7FE3-3C3C-9D6E-323CC464E1F3}</Project>
+      <Name>io_posix_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\io_tracer_parser_test.vcxproj">
+      <Project>{C9CD7C16-BDF5-3D06-8219-93A27F2B9370}</Project>
+      <Name>io_tracer_parser_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\io_tracer_test.vcxproj">
+      <Project>{E57AF101-F6B1-3B95-A086-438258A31D60}</Project>
+      <Name>io_tracer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\iostats_context_test.vcxproj">
+      <Project>{DD719AF9-7C00-3929-8BE9-CE0D99818408}</Project>
+      <Name>iostats_context_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\tools\ldb.vcxproj">
+      <Project>{C9C72590-2762-3C9F-A417-CF529144650E}</Project>
+      <Name>ldb</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\ldb_cmd_test.vcxproj">
+      <Project>{265485B6-FD13-3DD5-BDDA-D1995C60B98C}</Project>
+      <Name>ldb_cmd_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\listener_test.vcxproj">
+      <Project>{21F4E824-DF3E-328E-8504-D7A6A3D789F7}</Project>
+      <Name>listener_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\log_test.vcxproj">
+      <Project>{4089CE57-74EC-35FE-8095-D02C082EC186}</Project>
+      <Name>log_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\lru_cache_test.vcxproj">
+      <Project>{2C6521AF-7173-3776-8BB5-52B49EC17755}</Project>
+      <Name>lru_cache_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\manual_compaction_test.vcxproj">
+      <Project>{965081B5-C222-30ED-9D20-503F1D3363CC}</Project>
+      <Name>manual_compaction_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\memkind_kmem_allocator_test.vcxproj">
+      <Project>{1BC84E4A-5218-35AF-AE23-F89826788891}</Project>
+      <Name>memkind_kmem_allocator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\memory_test.vcxproj">
+      <Project>{77E68D92-947D-3FC3-A836-711063A105A1}</Project>
+      <Name>memory_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\memtable_list_test.vcxproj">
+      <Project>{3DA2882F-69DA-3F88-89A7-BF99B9667B25}</Project>
+      <Name>memtable_list_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\memtablerep_bench.vcxproj">
+      <Project>{93B18645-24A2-3C35-8FE1-AD79199A0C36}</Project>
+      <Name>memtablerep_bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\merge_helper_test.vcxproj">
+      <Project>{89111EFF-021B-350B-95A5-E0BE43A14DDA}</Project>
+      <Name>merge_helper_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\merge_test.vcxproj">
+      <Project>{3D2FD23F-F6AD-387A-829D-57D15AF9BAB0}</Project>
+      <Name>merge_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\merger_test.vcxproj">
+      <Project>{63CE0DE2-2529-35D2-8333-B69172BEDD89}</Project>
+      <Name>merger_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\mock_env_test.vcxproj">
+      <Project>{F139DF27-C7BB-318E-A268-E7ADD846A5B0}</Project>
+      <Name>mock_env_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\object_registry_test.vcxproj">
+      <Project>{CCFC2833-CDE1-3EDA-BC33-68FEDCCF6DE6}</Project>
+      <Name>object_registry_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\obsolete_files_test.vcxproj">
+      <Project>{2DBF1BDA-530D-3DFC-951A-DA4A792FC822}</Project>
+      <Name>obsolete_files_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\optimistic_transaction_test.vcxproj">
+      <Project>{067003B6-5FC3-3F53-AE2E-6401A5CDBBE3}</Project>
+      <Name>optimistic_transaction_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\option_change_migration_test.vcxproj">
+      <Project>{35E2CAAA-7B06-39DA-85DD-9A4245C54AA2}</Project>
+      <Name>option_change_migration_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\options_file_test.vcxproj">
+      <Project>{B33FC570-682E-31A7-918F-A53318955C77}</Project>
+      <Name>options_file_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\options_settable_test.vcxproj">
+      <Project>{C74B1742-F898-3C06-B09E-302E05FAB559}</Project>
+      <Name>options_settable_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\options_test.vcxproj">
+      <Project>{C79185F7-54A4-3E3E-B8B6-B74FF78741B0}</Project>
+      <Name>options_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\options_util_test.vcxproj">
+      <Project>{B40BD04D-B65E-3E15-BD8F-14CDC91A18E4}</Project>
+      <Name>options_util_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\partitioned_filter_block_test.vcxproj">
+      <Project>{FD4F75A4-087E-3143-B908-68710DB4E38A}</Project>
+      <Name>partitioned_filter_block_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\perf_context_test.vcxproj">
+      <Project>{43578380-B51D-3D81-A469-8C36462BA044}</Project>
+      <Name>perf_context_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\periodic_work_scheduler_test.vcxproj">
+      <Project>{508333D4-53A3-3146-A85B-45863D18DF5E}</Project>
+      <Name>periodic_work_scheduler_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\persistent_cache_test.vcxproj">
+      <Project>{DA28AD72-DAD1-3205-8529-30F132563167}</Project>
+      <Name>persistent_cache_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\plain_table_db_test.vcxproj">
+      <Project>{8F31AD06-25FC-3D06-8F14-A4A9D3B4C9C1}</Project>
+      <Name>plain_table_db_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\point_lock_manager_test.vcxproj">
+      <Project>{B2B7E87E-D3B8-3266-9346-24B7F45B6E28}</Project>
+      <Name>point_lock_manager_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\prefetch_test.vcxproj">
+      <Project>{36A26DEC-6B75-38F5-AA9E-7A39BF8C6ECB}</Project>
+      <Name>prefetch_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\prefix_test.vcxproj">
+      <Project>{7F17B02F-FB6B-3A2C-9DDD-16E0553D55BE}</Project>
+      <Name>prefix_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\random_access_file_reader_test.vcxproj">
+      <Project>{936E3EAE-C1C8-3CB1-8C03-99AB26EC414D}</Project>
+      <Name>random_access_file_reader_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\random_test.vcxproj">
+      <Project>{D474678A-62DA-36DA-9337-3B43CB795E4F}</Project>
+      <Name>random_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\range_del_aggregator_bench.vcxproj">
+      <Project>{5E7F1C9C-C4BA-3A2F-98F7-874DC4890FA7}</Project>
+      <Name>range_del_aggregator_bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\range_del_aggregator_test.vcxproj">
+      <Project>{B942FF36-EB25-3991-98DE-0DD3DED877A4}</Project>
+      <Name>range_del_aggregator_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\range_locking_test.vcxproj">
+      <Project>{84055F06-9558-3076-9001-B90E111D65AA}</Project>
+      <Name>range_locking_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\range_tombstone_fragmenter_test.vcxproj">
+      <Project>{AE40606E-973E-3059-B2F0-F4AB2DB4BF31}</Project>
+      <Name>range_tombstone_fragmenter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\rate_limiter_test.vcxproj">
+      <Project>{B9E740C0-C06C-3963-AD5B-7C9D58BDB8CF}</Project>
+      <Name>rate_limiter_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\reduce_levels_test.vcxproj">
+      <Project>{9A431A6B-CBD4-3A0A-8EF3-FFDF30CC816F}</Project>
+      <Name>reduce_levels_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\repair_test.vcxproj">
+      <Project>{E2232BBB-1B0D-3CF5-8F51-B0257527EEAA}</Project>
+      <Name>repair_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\repeatable_thread_test.vcxproj">
+      <Project>{1A70ACC5-9F1F-36D6-8C5C-253258272A90}</Project>
+      <Name>repeatable_thread_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\ribbon_test.vcxproj">
+      <Project>{53EF2A40-2DB2-3176-ACF0-6D575A4F1812}</Project>
+      <Name>ribbon_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\rocksdb.vcxproj">
+      <Project>{C9B6C6BB-BF66-3D3F-9056-ADF04C89C42C}</Project>
+      <Name>rocksdb</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\rocksdb-shared.vcxproj">
+      <Project>{AD0EDE87-2D87-3EE9-A22B-464F520AFD21}</Project>
+      <Name>rocksdb-shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\tools\rocksdb_dump.vcxproj">
+      <Project>{4C3A2E13-07B7-33D6-894B-0B7B0BA140B1}</Project>
+      <Name>rocksdb_dump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\tools\rocksdb_undump.vcxproj">
+      <Project>{C374F6FC-247F-3B56-84F6-EAEAE1B9E7FE}</Project>
+      <Name>rocksdb_undump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\sim_cache_test.vcxproj">
+      <Project>{70F37A0A-684C-36B0-A3CE-7D4A2F383692}</Project>
+      <Name>sim_cache_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\skiplist_test.vcxproj">
+      <Project>{086483DD-E5FC-3A0B-B6D8-10CAABBD3845}</Project>
+      <Name>skiplist_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\slice_test.vcxproj">
+      <Project>{068DD797-FEBE-33FA-80C7-963CF9758A67}</Project>
+      <Name>slice_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\slice_transform_test.vcxproj">
+      <Project>{A47DC346-1F58-315A-9B0C-EF76D834B8F7}</Project>
+      <Name>slice_transform_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\tools\sst_dump.vcxproj">
+      <Project>{C8361728-85A1-3A9F-BA00-5E73A928C045}</Project>
+      <Name>sst_dump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\sst_dump_test.vcxproj">
+      <Project>{3292D114-CD80-3B79-A29F-9B179442AA90}</Project>
+      <Name>sst_dump_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\sst_file_reader_test.vcxproj">
+      <Project>{325B4E39-47CD-34C0-807A-0BE313645509}</Project>
+      <Name>sst_file_reader_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\statistics_test.vcxproj">
+      <Project>{B2502A5E-42FB-3595-B357-779869B020A8}</Project>
+      <Name>statistics_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\stats_history_test.vcxproj">
+      <Project>{AB3E2C5B-FFB7-3C38-9426-EC28969C8925}</Project>
+      <Name>stats_history_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\stringappend_test.vcxproj">
+      <Project>{F136C0D4-D897-35E5-9564-AE549A974932}</Project>
+      <Name>stringappend_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\table_properties_collector_test.vcxproj">
+      <Project>{03DE2BA0-8106-340E-B0B1-6A5B87CDEB0C}</Project>
+      <Name>table_properties_collector_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\table_reader_bench.vcxproj">
+      <Project>{91A52DA9-F16F-3418-B199-2ADF4FADA851}</Project>
+      <Name>table_reader_bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\table_test.vcxproj">
+      <Project>{ABAB469B-630C-372F-9F8A-F1B2F7E5AE74}</Project>
+      <Name>table_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\testharness.vcxproj">
+      <Project>{E77295C4-3B3D-305A-8D50-3B2453BC0746}</Project>
+      <Name>testharness</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\testutil_test.vcxproj">
+      <Project>{09C5357F-F0A7-3D43-897D-C3E7879DD4DE}</Project>
+      <Name>testutil_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\testutillib.vcxproj">
+      <Project>{3E74960F-DE83-3F35-AA48-A411753E6325}</Project>
+      <Name>testutillib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\thread_list_test.vcxproj">
+      <Project>{71BF288C-9EF5-3BF4-B66D-2B3704621085}</Project>
+      <Name>thread_list_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\thread_local_test.vcxproj">
+      <Project>{DB28BC3E-7726-3975-98F5-604D79A35EBB}</Project>
+      <Name>thread_local_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\timer_queue_test.vcxproj">
+      <Project>{E40DCB18-B21B-3F15-B2E3-43FCC61D9BD4}</Project>
+      <Name>timer_queue_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\timer_test.vcxproj">
+      <Project>{FC6CAF39-12CB-33A4-9BB5-6116A08F816A}</Project>
+      <Name>timer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\trace_analyzer_test.vcxproj">
+      <Project>{E75CE568-EF26-313A-95D7-D06AEDE31F98}</Project>
+      <Name>trace_analyzer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\transaction_test.vcxproj">
+      <Project>{DF9D0DBB-DF87-3C2C-BFE9-D89EE932B36C}</Project>
+      <Name>transaction_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\ttl_test.vcxproj">
+      <Project>{7C821E31-4FD4-39FB-881E-CB0CE1F75336}</Project>
+      <Name>ttl_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\version_builder_test.vcxproj">
+      <Project>{C4DC92DD-4BB1-3A04-A1C7-C4659C828049}</Project>
+      <Name>version_builder_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\version_edit_test.vcxproj">
+      <Project>{F9A2C0EB-68E6-34D9-9CB6-F44CCDFA8ACF}</Project>
+      <Name>version_edit_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\version_set_test.vcxproj">
+      <Project>{3EE29204-E99F-3C18-888C-BDFE87A74828}</Project>
+      <Name>version_set_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\wal_edit_test.vcxproj">
+      <Project>{9185DD54-A75B-374D-AC6D-E6BCB211E3B6}</Project>
+      <Name>wal_edit_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\wal_manager_test.vcxproj">
+      <Project>{133BB466-C9D3-3994-9E23-344FE1C4D440}</Project>
+      <Name>wal_manager_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\work_queue_test.vcxproj">
+      <Project>{0B69A262-D3DA-3C84-BB7F-D7ADECCE3C78}</Project>
+      <Name>work_queue_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\write_batch_test.vcxproj">
+      <Project>{F39BB7F2-0E5A-3E1B-859E-738B6DD15A46}</Project>
+      <Name>write_batch_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\write_batch_with_index_test.vcxproj">
+      <Project>{EA891F8A-15B8-30E6-9211-86CF7FA3100D}</Project>
+      <Name>write_batch_with_index_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\write_buffer_manager_test.vcxproj">
+      <Project>{E9D5F1E6-62CD-344A-BA7B-E22C1997931C}</Project>
+      <Name>write_buffer_manager_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\write_callback_test.vcxproj">
+      <Project>{684EE75A-723C-307B-A3C3-827BD84F2089}</Project>
+      <Name>write_callback_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\write_controller_test.vcxproj">
+      <Project>{7206952D-AB45-3C53-A97E-FC5C39E9DEC6}</Project>
+      <Name>write_controller_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\write_prepared_transaction_test.vcxproj">
+      <Project>{CDAF5A4D-D060-3785-9682-02BE11724BB5}</Project>
+      <Name>write_prepared_transaction_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\tools\write_stress.vcxproj">
+      <Project>{BE9DEB8B-00AD-3672-8A7F-6FF2BD8A52C9}</Project>
+      <Name>write_stress</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\devroot\rocksdb\build\write_unprepared_transaction_test.vcxproj">
+      <Project>{51C76510-2F6F-3BF9-95B7-5CEDB01A0653}</Project>
+      <Name>write_unprepared_transaction_test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

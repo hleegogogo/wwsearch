@@ -1,0 +1,7 @@
+add_test( ManualCompactionTest.CompactTouchesAllKeys D:/devroot/rocksdb/build/Debug/manual_compaction_test.exe [==[--gtest_filter=ManualCompactionTest.CompactTouchesAllKeys]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ManualCompactionTest.CompactTouchesAllKeys PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( ManualCompactionTest.Test D:/devroot/rocksdb/build/Debug/manual_compaction_test.exe [==[--gtest_filter=ManualCompactionTest.Test]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ManualCompactionTest.Test PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( ManualCompactionTest.SkipLevel D:/devroot/rocksdb/build/Debug/manual_compaction_test.exe [==[--gtest_filter=ManualCompactionTest.SkipLevel]==] --gtest_also_run_disabled_tests)
+set_tests_properties( ManualCompactionTest.SkipLevel PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( manual_compaction_test_TESTS ManualCompactionTest.CompactTouchesAllKeys ManualCompactionTest.Test ManualCompactionTest.SkipLevel)

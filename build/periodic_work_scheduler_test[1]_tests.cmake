@@ -1,0 +1,7 @@
+add_test( PeriodicWorkSchedulerTest.Basic D:/devroot/rocksdb/build/Debug/periodic_work_scheduler_test.exe [==[--gtest_filter=PeriodicWorkSchedulerTest.Basic]==] --gtest_also_run_disabled_tests)
+set_tests_properties( PeriodicWorkSchedulerTest.Basic PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( PeriodicWorkSchedulerTest.MultiInstances D:/devroot/rocksdb/build/Debug/periodic_work_scheduler_test.exe [==[--gtest_filter=PeriodicWorkSchedulerTest.MultiInstances]==] --gtest_also_run_disabled_tests)
+set_tests_properties( PeriodicWorkSchedulerTest.MultiInstances PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( PeriodicWorkSchedulerTest.MultiEnv D:/devroot/rocksdb/build/Debug/periodic_work_scheduler_test.exe [==[--gtest_filter=PeriodicWorkSchedulerTest.MultiEnv]==] --gtest_also_run_disabled_tests)
+set_tests_properties( PeriodicWorkSchedulerTest.MultiEnv PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( periodic_work_scheduler_test_TESTS PeriodicWorkSchedulerTest.Basic PeriodicWorkSchedulerTest.MultiInstances PeriodicWorkSchedulerTest.MultiEnv)

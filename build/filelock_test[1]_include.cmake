@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/filelock_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/filelock_test[1]_tests.cmake")
+else()
+  add_test(filelock_test_NOT_BUILT filelock_test_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+add_test( CompactOnDeletionCollector.DeletionRatio D:/devroot/rocksdb/build/Debug/compact_on_deletion_collector_test.exe [==[--gtest_filter=CompactOnDeletionCollector.DeletionRatio]==] --gtest_also_run_disabled_tests)
+set_tests_properties( CompactOnDeletionCollector.DeletionRatio PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( CompactOnDeletionCollector.SlidingWindow D:/devroot/rocksdb/build/Debug/compact_on_deletion_collector_test.exe [==[--gtest_filter=CompactOnDeletionCollector.SlidingWindow]==] --gtest_also_run_disabled_tests)
+set_tests_properties( CompactOnDeletionCollector.SlidingWindow PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( compact_on_deletion_collector_test_TESTS CompactOnDeletionCollector.DeletionRatio CompactOnDeletionCollector.SlidingWindow)

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\devroot\rocksdb\build\CMakeFiles\6928235a7562d740f6323a1acc0eac44\ldb_tests.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\devroot\rocksdb\tools\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\devroot\rocksdb\build\tools\CMakeFiles\ldb_tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{214FAA65-9496-33EB-9BA4-A6F9546559CB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

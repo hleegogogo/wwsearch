@@ -1,0 +1,5 @@
+add_test( MemoryTest.SharedBlockCacheTotal D:/devroot/rocksdb/build/Debug/memory_test.exe [==[--gtest_filter=MemoryTest.SharedBlockCacheTotal]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MemoryTest.SharedBlockCacheTotal PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( MemoryTest.MemTableAndTableReadersTotal D:/devroot/rocksdb/build/Debug/memory_test.exe [==[--gtest_filter=MemoryTest.MemTableAndTableReadersTotal]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MemoryTest.MemTableAndTableReadersTotal PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( memory_test_TESTS MemoryTest.SharedBlockCacheTotal MemoryTest.MemTableAndTableReadersTotal)

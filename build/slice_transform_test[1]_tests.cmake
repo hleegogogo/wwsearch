@@ -1,0 +1,5 @@
+add_test( SliceTransformTest.CapPrefixTransform D:/devroot/rocksdb/build/Debug/slice_transform_test.exe [==[--gtest_filter=SliceTransformTest.CapPrefixTransform]==] --gtest_also_run_disabled_tests)
+set_tests_properties( SliceTransformTest.CapPrefixTransform PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( SliceTransformDBTest.CapPrefix D:/devroot/rocksdb/build/Debug/slice_transform_test.exe [==[--gtest_filter=SliceTransformDBTest.CapPrefix]==] --gtest_also_run_disabled_tests)
+set_tests_properties( SliceTransformDBTest.CapPrefix PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( slice_transform_test_TESTS SliceTransformTest.CapPrefixTransform SliceTransformDBTest.CapPrefix)

@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/DistributedMutexTest[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/DistributedMutexTest[1]_tests.cmake")
+else()
+  add_test(DistributedMutexTest_NOT_BUILT DistributedMutexTest_NOT_BUILT)
+endif()

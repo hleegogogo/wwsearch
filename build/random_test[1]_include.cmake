@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/random_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/random_test[1]_tests.cmake")
+else()
+  add_test(random_test_NOT_BUILT random_test_NOT_BUILT)
+endif()

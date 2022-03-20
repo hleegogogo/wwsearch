@@ -1,0 +1,5 @@
+add_test( OptionsFileTest.NumberOfOptionsFiles D:/devroot/rocksdb/build/Debug/options_file_test.exe [==[--gtest_filter=OptionsFileTest.NumberOfOptionsFiles]==] --gtest_also_run_disabled_tests)
+set_tests_properties( OptionsFileTest.NumberOfOptionsFiles PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( OptionsFileTest.OptionsFileName D:/devroot/rocksdb/build/Debug/options_file_test.exe [==[--gtest_filter=OptionsFileTest.OptionsFileName]==] --gtest_also_run_disabled_tests)
+set_tests_properties( OptionsFileTest.OptionsFileName PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( options_file_test_TESTS OptionsFileTest.NumberOfOptionsFiles OptionsFileTest.OptionsFileName)

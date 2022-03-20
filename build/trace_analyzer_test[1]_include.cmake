@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/trace_analyzer_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/trace_analyzer_test[1]_tests.cmake")
+else()
+  add_test(trace_analyzer_test_NOT_BUILT trace_analyzer_test_NOT_BUILT)
+endif()

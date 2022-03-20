@@ -1,0 +1,5 @@
+if(EXISTS "D:/devroot/rocksdb/build/range_del_aggregator_test[1]_tests.cmake")
+  include("D:/devroot/rocksdb/build/range_del_aggregator_test[1]_tests.cmake")
+else()
+  add_test(range_del_aggregator_test_NOT_BUILT range_del_aggregator_test_NOT_BUILT)
+endif()

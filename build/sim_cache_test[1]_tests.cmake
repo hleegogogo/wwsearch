@@ -1,0 +1,5 @@
+add_test( SimCacheTest.SimCache D:/devroot/rocksdb/build/Debug/sim_cache_test.exe [==[--gtest_filter=SimCacheTest.SimCache]==] --gtest_also_run_disabled_tests)
+set_tests_properties( SimCacheTest.SimCache PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( SimCacheTest.SimCacheLogging D:/devroot/rocksdb/build/Debug/sim_cache_test.exe [==[--gtest_filter=SimCacheTest.SimCacheLogging]==] --gtest_also_run_disabled_tests)
+set_tests_properties( SimCacheTest.SimCacheLogging PROPERTIES WORKING_DIRECTORY D:/devroot/rocksdb/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( sim_cache_test_TESTS SimCacheTest.SimCache SimCacheTest.SimCacheLogging)

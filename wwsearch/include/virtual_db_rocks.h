@@ -257,14 +257,15 @@ class VirtualDBRocksImpl : public VirtualDB {
     rocksdb::DestroyDB(path, rocksdb::Options());
   }
 
+  //fixme//
   // Test api
-  rocksdb::Cache* GetTableCache() {
-    rocksdb::DBImpl* db_impl = dynamic_cast<rocksdb::DBImpl*>(db_);
-    if (nullptr == db_impl) {
-      assert(false);
-    }
-    return db_impl->TEST_table_cache();
-  }
+  //rocksdb::Cache* GetTableCache() {
+  //  rocksdb::DBImpl* db_impl = dynamic_cast<rocksdb::DBImpl*>(db_);
+  //  if (nullptr == db_impl) {
+  //    assert(false);
+  //  }
+  //  return db_impl->TEST_table_cache();
+  //}
 
   // Get Rocksdb statistics.
   const std::shared_ptr<rocksdb::Statistics>& GetDBStatistics() const {

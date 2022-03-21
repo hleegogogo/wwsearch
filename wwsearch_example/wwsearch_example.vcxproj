@@ -133,14 +133,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OS_WIN;WIN32;NOMINMAX;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\devroot\rocksdb\include;D:\devroot\rocksdb;D:\devroot\rocksdb\db\db_impl;D:\devroot\rocksdb\wwsearch;D:\devroot\rocksdb\wwsearch\deps\tokenizer\include;D:\devroot\rocksdb\wwsearch\deps\protobuf\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\devroot\rocksdb\include;D:\devroot\rocksdb;D:\devroot\rocksdb\db\db_impl;D:\devroot\rocksdb\wwsearch;D:\devroot\rocksdb\wwsearch\deps\tokenizer\include;D:\devroot\rocksdb\wwsearch\deps\protobuf\src</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>D:\devroot\rocksdb\build\x64\Release\wwsearch.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\devroot\rocksdb\build\x64\Release\wwsearch.lib;D:\devroot\rocksdb\build\Release\rocksdb.lib;D:\devroot\rocksdb\wwsearch\deps\protobuf\cmake\build\solution\Release\libprotobuf.lib;kernel32.lib;user32.lib;gdi32.lib;uuid.lib;Ws2_32.lib;Rpcrt4.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

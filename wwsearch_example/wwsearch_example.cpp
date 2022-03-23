@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
     printf("Please check input args\n");
     return -1;
   }
-  indexer.Config().SetLogLevel(wwsearch::kSearchLogLevelDebug);
+  indexer.Config().SetLogLevel(wwsearch::kSearchLogLevelInfo);
 
   wwsearch::SearchStatus status = indexer.Open(use_rocksdb);
   SearchLogDebug("status:%s", status.GetState().c_str());

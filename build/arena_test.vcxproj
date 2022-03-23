@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\rocksdb;..\..\rocksdb\include;..\..\rocksdb\third-party\folly;..\..\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /d2Zi+</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -155,7 +155,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\devroot\rocksdb;D:\devroot\rocksdb\include;D:\devroot\rocksdb\third-party\folly;D:\devroot\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\rocksdb;..\..\rocksdb\include;..\..\rocksdb\third-party\folly;..\..\rocksdb\third-party\gtest-1.8.1\fused-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /d2Zi+ /Oxt</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
